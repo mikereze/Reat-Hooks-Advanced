@@ -198,14 +198,14 @@ import useCombinedReducers from 'use-combined-reducers';
 
   
 
-//     return (
-//         <DispatchContext.Provider value={dispatch}>
-//         <Filter/>
-//         <TodoList filteredTodos={filteredTodos} />
-//         <AddTodo/>
-//         </DispatchContext.Provider>
-//     );
-// }
+    return (
+        <DispatchContext.Provider value={dispatch}>
+        <Filter/>
+        <TodoList filteredTodos={filteredTodos} />
+        <AddTodo/>
+        </DispatchContext.Provider>
+    );
+}
 
 
 export default App;
