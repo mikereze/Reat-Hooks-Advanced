@@ -10,38 +10,39 @@ import useCombinedReducers from 'use-combined-reducers';
 ///Advanced HOOKS
 
 
-//const DispatchContext = createContext(null);
+const DispatchContext = createContext(null);
 
 
-const initialTodos = [
-    {
-      id: uuid(),
-      task: 'Learn React',
-      complete: true,
-    },
-    {
-      id: uuid(),
-      task: 'Learn Firebase',
-      complete: true,
-    },
-    {
-      id: uuid(),
-      task: 'Learn GraphQL',
-      complete: false,
-    },
-  ];
-const filterReducer =(state,action) => {
-    switch(action.type){
-        case 'SHOW_ALL':
-             return "ALL";
-        case 'SHOW_COMPLETE':
-             return "COMPLETE"
-        case 'SHOW_INCOMPLETE':
-            return "INCOMPLETE"
-        default:
-            return state  
-    }
-}
+// const initialTodos = [
+//     {
+//       id: uuid(),
+//       task: 'Learn React',
+//       complete: true,
+//     },
+//     {
+//       id: uuid(),
+//       task: 'Learn Firebase',
+//       complete: true,
+//     },
+//     {
+//       id: uuid(),
+//       task: 'Learn GraphQL',
+//       complete: false,
+//     },
+//   ];
+
+// const filterReducer =(state,action) => {
+//     switch(action.type){
+//         case 'SHOW_ALL':
+//              return "ALL";
+//         case 'SHOW_COMPLETE':
+//              return "COMPLETE"
+//         case 'SHOW_INCOMPLETE':
+//             return "INCOMPLETE"
+//         default:
+//             return state  
+//     }
+// }
 
 
 const todoReducer = (state,action) => {
